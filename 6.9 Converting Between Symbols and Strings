@@ -1,0 +1,6 @@
+strings = ["HTML", "CSS", "JavaScript", "Python", "Ruby"]
+# Add your code below!
+
+symbols = []
+
+strings.each { |code| symbols.push(code.to_sym) }
