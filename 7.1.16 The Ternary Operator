@@ -1,0 +1,2 @@
+dude = 1 < 2
+puts  dude ?  "One is less than two!" : "One is not less than two."
