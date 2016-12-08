@@ -1,0 +1,3 @@
+no_nil_hash = Hash.new("This instead of nil as a result")
+
+no_nil_hash["turtles"]
