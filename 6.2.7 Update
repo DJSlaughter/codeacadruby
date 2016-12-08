@@ -1,0 +1,34 @@
+movies = {
+    "10Canoes" => 4
+}
+puts "Enter a movie"
+choice = gets.chomp
+
+case choice
+when "add"
+  puts "What movie do you want to add?"
+  title = gets.chomp
+  if movies[title.to_sym].nil?
+    puts "What is your rating? (0 to 4)"
+    rating = gets.chomp
+    movies[title.to_sym] = rating.to_i
+  else
+  puts "Movie already in database!!"
+  end
+when "update"
+  puts "What is the movie title?"
+  title = gets.chomp
+  if movies[title].nil?
+      puts "Movie isn't in database!!"
+  else 
+      puts "What is your new rating? (0 to 4)"
+      rating = gets.chomp
+      movies[title.to_sym] = rating.to_i
+  end
+when "display"
+  puts "Movies!"
+when "delete"
+  puts "Deleted!"
+else
+  puts"Error!"
+end
