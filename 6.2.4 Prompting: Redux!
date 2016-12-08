@@ -1,0 +1,22 @@
+movies = {
+    "10Canoes" => 4
+}
+puts "Enter a movie"
+choice = gets.chomp
+
+case choice
+when "add"
+  puts "What movie do you want to add?"
+  title = gets.chomp
+  puts "What is your rating?"
+  rating = gets.chomp
+  movies[title] = rating
+when "update"
+  puts "Updated!"
+when "display"
+  puts "Movies!"
+when "delete"
+  puts "Deleted!"
+else
+  puts"Error!"
+end
