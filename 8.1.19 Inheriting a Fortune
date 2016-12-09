@@ -1,0 +1,10 @@
+
+class Email 
+def initialize(subject)
+  @subject = subject
+
+end
+
+Email < Message
+
+end
